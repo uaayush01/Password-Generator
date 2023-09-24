@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right bottom, #ffa585, #45c5d8, white);
+
+    color: white;
+    font-weight: 600;
+    /* position: absolute; */
+}
+
+body.active {
+    background: linear-gradient(to right bottom, #505050, #121212, #505050)
+}
+
+.dbtn {
+    height: 50px;
+    width: 20px;
+    position: relative;
+    left: 850px;
+    bottom: 330px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 35%;
+    cursor: pointer;
+    /* background-color: #121212;  */
+    /*color: #fff;  */
+}
+
+.dbtn:hover {
+    border: solid 1.5px black;
+}
+
+.container {
+    border: 0.5px solid white;
+
+    border-radius: 10px;
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+
+.container h1 {
+    font-size: 1.4 rem;
+    margin-block: 8px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputBox span {
+    position: absolute;
+    top: 16px;
+    right: 18px;
+    color: #000;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.passBox {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 300px;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-block: 8px;
+    text-overflow: ellipsis;
+}
+
+.row {
+    display: flex;
+    margin-block: 8px;
+}
+
+.row p {
+    flex-basis: 100%;
+    font-size: 18px;
+}
+
+.row label {
+    flex-basis: 100%;
+    font-size: 18px;
+}
+
+.row input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.genbtn {
+    border: none;
+    outline: none;
+    background-color: #2c619e;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-block: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+
+.genbtn:hover {
+    background-color: #0066ff;
+}
